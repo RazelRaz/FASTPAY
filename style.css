@@ -1,0 +1,90 @@
+/*********************************************** 
+                Google fonts
+***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@400;500&display=swap');
+
+/*********************************************** 
+                Default CSS
+***********************************************/
+
+:root {
+    --font-base: 'Plus Jakarta Sans', sans-serif;
+    --font-alt:  'Poppins', sans-serif;
+
+    --color-primary: #4368C7;
+    --color-white: #fff;
+    --color-dark: #2D2A27;
+    --color-light: rgba(45, 42, 39, 0.5);
+
+    --section-padding-one: 168px;
+    --section-padding-two:130px;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1460px;
+}
+
+body {
+    font-family: var(--font-alt);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    overflow-x: hidden;
+    background-color:var(--color-white);
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 101px;
+    font-family: var(--font-base);
+    color: var(--color-dark);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    font-family: var(--font-base);
+    color: var(--color-dark);
+}
+
+p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: var(--font-alt);
+    color: var(--color-light);
+}
+
+/*********************************************** 
+                Main CSS
+***********************************************/
