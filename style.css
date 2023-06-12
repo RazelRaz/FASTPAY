@@ -143,13 +143,16 @@ p {
 
 /* small menu css */
 .nav__area-sm-menu {
-    background-color: red;
+    background-color: var(--color-white);
     position: absolute;
     width: 100%;
     top: 100%;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
 }
 
 .nav__area-sm-menu-content_link a {
@@ -166,6 +169,10 @@ p {
     transition: color .3s;
 }
 
+.nav__area-sm-menu-content_link a:first-child {
+    border-top: 1px solid #eee;
+}
+
 .nav__area-hamburger-menu {
     display: flex;
     align-items: center;
@@ -178,9 +185,7 @@ p {
  Media Queries -  Medium And Small Screens 
  *************************************************/
  @media screen and (max-width: 1024px) {
-    body {
-        background-color: pink;
-    }
+
     .nav__area-main-menu {
         display: none;
     }
@@ -196,6 +201,8 @@ p {
     .sm__menu-open {
         visibility: visible;
         opacity: 1;
+        top: 18%;
+        transition: all .3s;
     }
 
  }
