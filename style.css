@@ -49,7 +49,9 @@ img {
 }
 
 .container {
-    width: 1460px;
+    /* width: 1460px; */
+    max-width: 1460px;
+    margin: 0 auto;
 }
 
 body {
@@ -88,3 +90,112 @@ p {
 /*********************************************** 
                 Main CSS
 ***********************************************/
+.nav__area {
+    padding-top: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav__area-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__area-main-menu ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__area-main-menu ul li a{
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-dark);
+}
+
+.nav__area-login {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__area-login a{
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: var(--font-base);
+    border: 1.5px solid rgba(67, 104, 199, 0.2);
+    border-radius: 5px;
+    color: var(--color-primary);
+}
+
+.nav__area-login a:nth-child(2){
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* small menu css */
+.nav__area-sm-menu {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.nav__area-sm-menu-content_link a {
+    display: block;
+    text-decoration: none;
+    padding: 2.5rem 3rem;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color .3s;
+}
+
+.nav__area-hamburger-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*************************************************
+ Media Queries -  Medium And Small Screens 
+ *************************************************/
+ @media screen and (max-width: 1024px) {
+    body {
+        background-color: pink;
+    }
+    .nav__area-main-menu {
+        display: none;
+    }
+    .nav__area-login {
+        display: none;
+    }
+    .nav__area-hamburger-menu {
+        display: flex;
+    }
+    .d_none {
+        display: none;
+    }
+    .sm__menu-open {
+        visibility: visible;
+        opacity: 1;
+    }
+
+ }
