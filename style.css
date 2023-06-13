@@ -180,12 +180,66 @@ p {
     display: none;
 }
 
+/* dropdown */
+li.dropdown__item {
+    display: flex;
+}
+
+.dropdown__menu {
+    position: relative;
+    
+}
+
+.nav__area-main-menu ul img {
+    width: 24px;
+    height: 24px;
+    float: right;
+}
+
+.dropdown__menu-item ul {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 10px;
+    background: var(--color-white);
+    padding: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.1);
+}
+
+.dropdown__menu-item ul li {
+    font-family: var(--font-base);
+
+}
+
+.dropdown__menu-item ul li a{
+    font-family: var(--font-base);
+    color: var(--color-light);
+    border-bottom: 1px solid #eee;
+}
+ 
+.nav__area-main-menu ul li:hover .dropdown__menu-item ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+
 
 /*************************************************
  Media Queries -  Medium And Small Screens 
  *************************************************/
  @media screen and (max-width: 1024px) {
-
+    /* nav area css */
     .nav__area {
         padding: 1rem 2rem;
     }
@@ -206,7 +260,9 @@ p {
         visibility: visible;
         opacity: 1;
         top: 10%;
+        left: 0;
         transition: all .3s;
     }
+    /* nav area css ends */
 
  }

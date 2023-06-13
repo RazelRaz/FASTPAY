@@ -21,3 +21,20 @@ function toggleVisibility() {
 smMenu_content_link.addEventListener('click', function() {
     smMenu.classList.remove('sm__menu-open');
 })
+
+// Get all the dropdown items
+// const dropdownItems = document.querySelectorAll('.dropdown__item');
+
+// // Loop through each dropdown item
+// dropdownItems.forEach((item) => {
+//   // Get the dropdown menu
+//   const dropdownMenu = item.querySelector('.dropdown__menu-item');
+
+//   // Add event listeners for hover
+//   item.addEventListener('mouseenter', () => {
+//     dropdownMenu.style.display = 'block';
+//   });
+//   item.addEventListener('mouseleave', () => {
+//     dropdownMenu.style.display = 'none';
+//   });
+// });
