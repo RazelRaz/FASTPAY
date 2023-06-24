@@ -49,7 +49,6 @@ img {
 }
 
 .container {
-    /* width: 1460px; */
     max-width: 1460px;
     margin: 0 auto;
 }
@@ -85,6 +84,10 @@ p {
     line-height: 32px;
     font-family: var(--font-alt);
     color: var(--color-light);
+}
+
+.content__gap {
+    gap: 100px;
 }
 
 /*********************************************** 
@@ -234,14 +237,116 @@ li.dropdown__item {
 }
 
 
+/***************************************************
+ hero area start 
+ ***************************************************/
+.hero__area {
+    padding-top: var(--section-padding-one);
+    height: 100vh;
+    width: 100%;
+}
+
+.hero__area-left h1 {
+    font-family: var(--font-base);
+    font-family: var(--color-dark);
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 101px;
+}
+
+.hero__area-left h1 span, .hero__area-left p span{
+    color: var(--color-primary);
+}
+
+.hero__area-left p {
+    margin-top: 30px;
+}
+
+.hero__area-left-button-box {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.hero__area-left-button-box a {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 22px 25px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.hero__area-left-button-box a i{
+    vertical-align: middle;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.hero__area-left-button-box a:last-child{
+    background-color: rgba(79, 134, 213, 0.2);
+    color: var(--color-primary);
+}
+
+.hero__area-right {
+
+}
+
+.hero__area-right img {
+    width: 592.93px;
+    height: 602px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*************************************************
  Media Queries -  Medium And Small Screens 
  *************************************************/
  @media screen and (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
     /* nav area css */
     .nav__area {
-        padding: 1rem 2rem;
+        padding: 1rem 0rem;
     }
 
     .nav__area-main-menu {
@@ -259,10 +364,71 @@ li.dropdown__item {
     .sm__menu-open {
         visibility: visible;
         opacity: 1;
-        top: 10%;
+        top: 6%;
         left: 0;
         transition: all .3s;
     }
     /* nav area css ends */
 
+    /* hero__area css */
+    .hero__area {
+        height: fit-content;
+        padding: 75px 0;
+    }
+
+    .hero__area .content__gap {
+        gap: 40px;
+    }
+
+    .hero__area-left h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .hero__area-left p {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .hero__area-left-button-box {
+        margin-top: 39px;
+    }
+
+    .hero__area-left-button-box a {
+        font-size: 16px;
+        padding: 18px 23px;
+    }
+
+    .hero__area-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* hero__area css ends */
+    
+ }
+
+ /*************************************************
+ Media Queries -  Small Screens 
+ *************************************************/
+ @media screen and (max-width: 600px) {
+
+    .sm__menu-open {
+        top: 9%;
+    }
+
+    /* hero area css */
+    .hero__area .content {
+        flex-direction: column-reverse;
+    }
+
+    .hero__area-left {
+        text-align: center;
+    }
+
+    .hero__area-left-button-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
  }
