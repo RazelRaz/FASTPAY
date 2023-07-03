@@ -99,6 +99,8 @@ p {
     padding-top: 60px;
 }
 
+
+
 /*********************************************** 
                 Main CSS
 ***********************************************/
@@ -601,6 +603,22 @@ features_area start
         width: auto;
         height: 35px;
     }
+
+    /* features_area css */
+    .features_area-left-box, .features_area-left, .features_area-features, .features_area-right {
+        width: 100%;
+    }
+    
+    .extra-padding {
+        flex-direction: column;
+    }
+    .features_area-left-content h2 {
+        font-size: 30px;
+    }
+    .features_area-left-content p {
+        margin-top: 16px;
+    }
+    
     
  }
 
@@ -629,6 +647,23 @@ features_area start
 
     /* brands_area css */
     .brands_area-images {
+        flex-direction: column;
+    }
+
+    /* feature area css*/
+    .features_area-left {
+        flex-direction: column;
+    }
+
+    .features_area-left-content h2 {
+        font-size: 26px;
+    }
+
+    .features_area-left-content {
+        text-align: center;
+    }
+
+    .features_area-features {
         flex-direction: column;
     }
  }
