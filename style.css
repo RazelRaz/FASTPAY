@@ -326,7 +326,7 @@ li.dropdown__item {
 
 .brands_area-images::before {
     position: absolute;
-    background: url(/images/vec.png);
+    background: url(/images/Vector-main.svg);
     content: '';
     width: 46px;
     height: 46px;
@@ -498,6 +498,65 @@ features_area start
     width: 266.561px;
     flex-shrink: 0;
 }
+
+/***************************************************
+paytract_area start
+***************************************************/
+.paytract_area {
+    padding-top: var(--section-padding-two);
+}
+
+.paytract_area-left img {
+    width: 552px;
+}
+
+.paytract_area .features_area-theme-heading {
+    text-align: left;
+}
+
+.paytract_area .content {
+    justify-content: unset;
+    gap: 208px;
+}
+.paytract_area-right-contents {
+    margin-top: 40px;
+}
+
+.paytract_area-right-contents p {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.paytract_area-right-contents p img{
+    width: 20px;
+    height: 20px;
+    padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
