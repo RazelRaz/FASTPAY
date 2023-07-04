@@ -677,6 +677,12 @@ paytract_area start
     .features_area-left-content p {
         margin-top: 16px;
     }
+
+    /* paytract_area css */
+    .paytract_area .content {
+        flex-direction: column-reverse;
+        gap: 65px;
+    }
     
     
  }
@@ -725,4 +731,11 @@ paytract_area start
     .features_area-features {
         flex-direction: column;
     }
+
+    /* paytract_area */
+    .paytract_area-left img {
+        width: 100%;
+    }
+
+
  }
